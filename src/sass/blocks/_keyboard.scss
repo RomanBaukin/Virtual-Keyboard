@@ -1,0 +1,78 @@
+.keyboard {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  width: 718px;
+  border: 2px solid $main-color;
+  padding: 5px;
+}
+
+.key {
+  width: 40px;
+  height: 40px;
+  margin: 3px;
+  padding: 3px;
+  float: left;
+  color: $main-color;
+  background-color: $body-bg;
+  border: 1px solid $main-color;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: $main-color;
+    color: $body-bg;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.keyboard .Backspace,
+.keyboard .CapsLock,
+.keyboard .ShiftLeft {
+  width: 100px;
+}
+
+.keyboard .Enter,
+.keyboard .ShiftRight {
+  width: 86px;
+}
+
+.keyboard .Delete {
+  width: 44px;
+}
+
+.keyboard .Tab {
+  width: 50px;
+}
+
+.keyboard .Space {
+  width: 330px;
+}
+
+.keyboard .AltLeft,
+.keyboard .AltRight,
+.keyboard .ArrowUp,
+.keyboard .ArrowLeft,
+.keyboard .ArrowDown,
+.keyboard .ArrowRight,
+.keyboard .Backspace,
+.keyboard .CapsLock,
+.keyboard .ControlLeft,
+.keyboard .ControlRight,
+.keyboard .Delete,
+.keyboard .Enter,
+.keyboard .ShiftLeft,
+.keyboard .ShiftRight,
+.keyboard .Tab,
+.keyboard .MetaLeft {
+  background-color: $secondary-color;
+
+  &:hover {
+    background-color: $main-color;
+    color: $body-bg;
+  }
+}
